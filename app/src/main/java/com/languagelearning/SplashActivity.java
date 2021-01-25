@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
                 try{
                     while(wait1<=ScreenDisplay )
                     {
-                        sleep(100);
+                        sleep(200);
                         wait1+=100;
                     }
                 }
