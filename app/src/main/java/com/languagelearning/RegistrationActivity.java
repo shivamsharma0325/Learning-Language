@@ -1,4 +1,4 @@
-package com.launguagelearning;
+package com.languagelearning;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -10,10 +10,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.languagelearning.R;
-import com.launguagelearning.api.EndPointUrl;
-import com.launguagelearning.api.RetrofitInstance;
-import com.launguagelearning.model.ResponseData;
+import com.languagelearning.api.EndPointUrl;
+import com.languagelearning.api.RetrofitInstance;
+import com.languagelearning.model.ResponseData;
 
 import retrofit2.Call;
 import retrofit2.Callback;

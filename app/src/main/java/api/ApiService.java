@@ -2,7 +2,7 @@ package api;
 
 
 
-import com.launguagelearning.model.ResponseData;
+import com.languagelearning.model.ResponseData;
 
 import java.util.Map;
 
@@ -17,7 +17,7 @@ import retrofit2.http.Query;
 
 public interface ApiService {
 
-    @GET("DriverApp/user_registration.php")
+    @GET("LanguageLearning/user_registration.php")
     Call<ResponseData> userRegistration(
             @Query("name") String name,
             @Query("email") String email,
@@ -25,7 +25,7 @@ public interface ApiService {
             @Query("pwd") String pwd);
 
 
-    @GET("/DriverApp/user_login.php?")
+    @GET("/LanguageLearning/user_login.php?")
     Call<ResponseData> userLogin(
             @Query("uname") String uname,
             @Query("pwd") String pwd,
@@ -33,10 +33,10 @@ public interface ApiService {
     );
 
 
-    @GET("/DriverApp/forgotpassword.php")
+    @GET("/LanguageLearning/forgotpassword.php")
     Call<ResponseData> forgotpassword(@Query("emailid") String emailid);
 
-    @GET("/DriverApp/update_pickup_status.php?")
+    @GET("/LanguageLearning/update_pickup_status.php?")
     Call<ResponseData> updatePickupStatus(@Query("status") String status, @Query("id") String id);
 
     @Multipart
@@ -48,7 +48,7 @@ public interface ApiService {
     );
 
     @Multipart
-    @POST("/DriverApp/user_update_profile.php?")
+    @POST("/LanguageLearning/user_update_profile.php?")
     Call<ResponseData> user_update_profile(
             @Part MultipartBody.Part file,
             @PartMap Map<String, String> partMap
