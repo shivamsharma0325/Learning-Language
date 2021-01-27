@@ -7,5 +7,7 @@
     <dimen name="loginViewsMargin">20dp</dimen>
 
     <dimen name="signup_text_margin_top">10dp</dimen>
+    <dimen name="_10sdp">10</dimen>
+    <dimen name="_8sdp">10</dimen>
 
 </resources>
