@@ -14,6 +14,7 @@ import com.languagelearning.api.EndPointUrl;
 import com.languagelearning.api.RetrofitInstance;
 import com.languagelearning.model.ResponseData;
 
+import api.EndPointUrl;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

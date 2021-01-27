@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        final int ScreenDisplay = 1500;
+        final int ScreenDisplay = 1000;
         Thread t1=new Thread(){
             int wait1=0;
             public void run(){
