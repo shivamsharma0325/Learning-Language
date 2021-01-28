@@ -18,7 +18,7 @@ import retrofit2.http.Query;
 public interface EndPointUrl {
 
     @GET("/LanguageLearning/user_registration.php")
-    Call<ResponseData> registration(@Query("uname") String uname, @Query("pwd") String pwd);
+    Call<ResponseData> registration(String fname, String lname, @Query("uname") String uname, @Query("pwd") String pwd);
 
     @GET("/LanguageLearning/user_login.php")
     Call<ResponseData> login(@Query("uname") String uname, @Query("pwd") String pwd);
