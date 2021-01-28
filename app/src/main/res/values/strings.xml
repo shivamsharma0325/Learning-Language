@@ -9,4 +9,8 @@
     <string name="login_name_hint">Name</string>
     <string name="login_mobile_number_hint">Mobile Number</string>
     <string name="forgot_password" />
+    <string name="login_confirm_password_hint">10</string>
+    <string name="login_email_hint">10</string>
+    <string name="last_name_hint">10</string>
+    <string name="first_name_hint">10</string>
 </resources>
