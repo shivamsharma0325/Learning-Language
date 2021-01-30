@@ -8,16 +8,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.languagelearning.api.EndPointUrl;
-import com.languagelearning.api.RetrofitInstance;
-import com.languagelearning.model.ResponseData;
-
 import androidx.appcompat.app.AppCompatActivity;
-import api.EndPointUrl;
-import api.RetrofitInstance;
+
+import com.launguagelearning.api.EndPointUrl;
+import com.launguagelearning.api.RetrofitInstance;
+
+import com.launguagelearning.model.ResponseData;
+import com.launguagelearning.model.User;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static com.languagelearning.R.*;
 
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -27,16 +30,16 @@ public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        setContentView(layout.activity_registration);
         getSupportActionBar().setTitle("Registration");
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        editFirstName = (EditText)findViewById(R.id.editFirstName);
-        editLastName = (EditText)findViewById(R.id.editLastName);
-        editUserName = (EditText)findViewById(R.id.editUserName);
-        editPassword = (EditText)findViewById(R.id.editPassword);
-        editConfirmPassword = (EditText)findViewById(R.id.editConfirmPassword);
-        btnSubmit =(Button)findViewById(R.id.btnSubmit);
+        editFirstName = (EditText)findViewById(id.editFirstName);
+        editLastName = (EditText)findViewById(id.editLastName);
+        editUserName = (EditText)findViewById(id.editUserName);
+        editPassword = (EditText)findViewById(id.editPassword);
+        editConfirmPassword = (EditText)findViewById(id.editConfirmPassword);
+        btnSubmit =(Button)findViewById(id.btnSubmit);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,7 +96,7 @@ public class RegistrationActivity extends AppCompatActivity {
         }
     }
     ProgressDialog pd;
-    private void submitdata(String fname,String lname,String uname,String pwd) {
+    private <EndPointUrl> void submitdata(String fname, String lname, String uname, String pwd) {
         pd = new ProgressDialog(RegistrationActivity.this);
         pd.setTitle("Please wait,Data is being loaded...");
         pd.show();
