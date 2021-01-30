@@ -1,9 +1,9 @@
 package api;
-
-
-
+import com.languagelearning.model.EditProfile;
+import com.languagelearning.model.Lessons;
 import com.languagelearning.model.ResponseData;
 
+import java.util.List;
 import java.util.Map;
 
 import okhttp3.MultipartBody;
@@ -15,46 +15,36 @@ import retrofit2.http.Part;
 import retrofit2.http.PartMap;
 import retrofit2.http.Query;
 
-public interface ApiService {
+public interface EndPointUrl {
 
-    @GET("LanguageLearning/user_registration.php")
-    Call<ResponseData> userRegistration(
-            @Query("name") String name,
-            @Query("email") String email,
-            @Query("phonenumber") String phonenumber,
-            @Query("pwd") String pwd);
+    @GET("/LanguageLearning/user_registration.php")
+    Call<ResponseData> registration(@Query("fname") String fname, @Query("lname") String lname,@Query("uname") String uname, @Query("pwd") String pwd);
 
+    @GET("/LanguageLearning/user_login.php")
+    Call<ResponseData> login(@Query("uname") String uname, @Query("pwd") String pwd);
 
-    @GET("/LanguageLearning/user_login.php?")
-    Call<ResponseData> userLogin(
-            @Query("uname") String uname,
-            @Query("pwd") String pwd,
-            @Query("role") String role
-    );
-
-
-    @GET("/LanguageLearning/forgotpassword.php")
-    Call<ResponseData> forgotpassword(@Query("emailid") String emailid);
-
-    @GET("/LanguageLearning/update_pickup_status.php?")
-    Call<ResponseData> updatePickupStatus(@Query("status") String status, @Query("id") String id);
+    @GET("/LanguageLearning/send_password.php")
+    Call<ResponseData> send_password(@Query("uname") String uname);
 
     @Multipart
     @POST("LanguageLearning/add_category_image.php")
     Call<ResponseData> userRegistration(
             @Part MultipartBody.Part file,
             @PartMap Map<String, String> partMap
-
     );
+    @GET("/LanguageLearning/getAnimalsLessions.php")
+    Call<List<Lessons>> getAnimalsLessions();
 
-    @Multipart
-    @POST("/LanguageLearning/user_update_profile.php?")
-    Call<ResponseData> user_update_profile(
-            @Part MultipartBody.Part file,
-            @PartMap Map<String, String> partMap
+    @GET("/LanguageLearning/getColorsLessions.php")
+    Call<List<Lessons>> getColorsLessions();
 
-    );
+    @GET("/LanguageLearning/getShapesLessions.php")
+    Call<List<Lessons>> getShapesLessions();
 
+    @GET("/LanguageLearning/getProfile.php")
+    Call<List<EditProfile>> getProfile(@Query("uname") String uname);
 
+    @GET("/LanguageLearning/update_profile.php")
+    Call<ResponseData> update_profile(@Query("fname") String fname,@Query("lname") String lname,@Query("uname") String uname,@Query("pwd") String pwd);
 
 }
