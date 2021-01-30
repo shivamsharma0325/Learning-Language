@@ -49,12 +49,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(editUserName.getText().toString().isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"Please enter username",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Please enter the username",Toast.LENGTH_LONG).show();
                     return;
                 }
                 if(editPassword.getText().toString().isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"Please enter password",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Please enter the password",Toast.LENGTH_LONG).show();
                     return;
                 }
                 if(sp_role.getSelectedItem().toString().equals("User")) {
