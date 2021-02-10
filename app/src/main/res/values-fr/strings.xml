@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Language Learning</string>
+    <string name="register">REGISTER1</string>
+    <string name="login_user_hint">EmailID1</string>
+    <string name="login_password_hint">Password1</string>
+    <string name="login_confirm_password_hint">Confirm Password1</string>
+    <string name="signup_login_hint">Already have an account? Sign In1</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up1</string>
+    <string name="forgot_password">Forgot Password?1</string>
+    <string name="login_name_hint">Name1</string>
+    <string name="login_email_hint">Email1</string>
+    <string name="first_name_hint">First Name1</string>
+    <string name="last_name_hint">Last Name1</string>
+    <string name="login_mobile_number_hint">Mobile Number1</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.1</string>
+    <string-array name="types">
+        <item>Colors</item>
+        <item>Animals</item>
+        <item>Shapes</item>
+    </string-array>
+    <string-array name="levels">
+        <item>Level-1</item>
+        <item>Level-2</item>
+        <item>Level-3</item>
+    </string-array>
+    <string-array name="role">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string name="Animals">Animals1</string>
+    <string name="Shapes">Shapes1</string>
+    <string name="Colors">Colors1</string>
+    <string name="UserHomeScreen">User Home Screen1</string>
+    <string name="UploadImage">Upload Image1</string>
+    <string name="Submit">Submit1</string>
+    <string name="EnterOption1">Enter Option1</string>
+    <string name="EnterOption2">Enter Option2</string>
+    <string name="EnterOption3">Enter Option3</string>
+    <string name="EnterAnswer">Enter Answer1</string>
+
+    <string name="AddLesson">Add Lesson1</string>
+    <string name="AddTest">Add Test1</string>
+    <string name="Learning">Learning1</string>
+    <string name="Testing">Testing1</string>
+    <string name="MyProfile">My Profile1</string>
+    <string name="Previous">Previous1</string>
+    <string name="Next">Next1</string>
+    <string name="Question">Question1</string>
+    <string name="IdentifyImage">Identify the following Image1</string>
+    <string name="Quit">Quit1</string>
+    <string name="YourScore">Your Score1</string>
+    <string name="Restart">Restart1</string>
+    <string name="Login">Login1</string>
+    <string name="RememberMe">Remember Me1</string>
+    <string name="Register">Register1</string>
+    <string name="Signup">Signup1</string>
+</resources>
