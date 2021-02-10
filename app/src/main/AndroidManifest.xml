@@ -14,15 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageSlider">
+        <activity android:name=".AddTestQuestionsAdminActivity"></activity>
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AddTestAdminActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".AddImageActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".ResultActivity"/>
 
+        <activity android:name=".QuestionsActivity"/>
         <activity android:name=".BaseActivity"/>
 
 
