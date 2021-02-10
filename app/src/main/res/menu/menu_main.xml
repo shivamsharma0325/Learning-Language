@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit_result"
+        android:title="Result" />
+    <item android:id="@+id/edit_profile"
+        android:title="Edit Profile" />
+    <item android:id="@+id/set_en"
+        android:title="Set English" />
+    <item android:id="@+id/set_fr"
+        android:title="Set French" />
     <item android:id="@+id/logout"
         android:title="Logout" />
 </menu>

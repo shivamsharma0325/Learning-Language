@@ -2,15 +2,60 @@
     <string name="app_name">Language Learning</string>
 
     <string name="register">REGISTER</string>
-    <string name="login_user_hint">Username</string>
+    <string name="login_user_hint">EmailID</string>
     <string name="login_password_hint">Password</string>
+    <string name="login_confirm_password_hint">Confirm Password</string>
     <string name="signup_login_hint">Already have an account? Sign In</string>
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
     <string name="login_name_hint">Name</string>
+    <string name="login_email_hint">Email</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
     <string name="login_mobile_number_hint">Mobile Number</string>
-    <string name="forgot_password" />
-    <string name="login_confirm_password_hint">10</string>
-    <string name="login_email_hint">10</string>
-    <string name="last_name_hint">10</string>
-    <string name="first_name_hint">10</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+    <string-array name="types">
+        <item>Colors</item>
+        <item>Animals</item>
+        <item>Shapes</item>
+    </string-array>
+    <string-array name="levels">
+        <item>Level-1</item>
+        <item>Level-2</item>
+        <item>Level-3</item>
+    </string-array>
+    <string-array name="role">
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+    <string name="Animals">Animals</string>
+    <string name="Shapes">Shapes</string>
+    <string name="Colors">Colors</string>
+    <string name="UserHomeScreen">User Home Screen</string>
+    <string name="UploadImage">Upload Image</string>
+    <string name="Submit">Submit</string>
+    <string name="EnterOption1">Enter Option1</string>
+    <string name="EnterOption2">Enter Option2</string>
+    <string name="EnterOption3">Enter Option3</string>
+    <string name="EnterAnswer">Enter Answer</string>
+
+    <string name="AddLesson">Add Lesson</string>
+    <string name="AddTest">Add Test</string>
+    <string name="Learning">Learning</string>
+    <string name="Testing">Testing</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="Previous">Previous</string>
+    <string name="Next">Next</string>
+    <string name="Question">Question</string>
+    <string name="IdentifyImage">Identify the following Image</string>
+    <string name="Quit">Quit</string>
+    <string name="YourScore">Your Score</string>
+    <string name="Restart">Restart</string>
+    <string name="Login">Login</string>
+    <string name="RememberMe">Remember Me</string>
+    <string name="Register">Register</string>
+    <string name="Signup">Signup</string>
+
+
+
 </resources>
