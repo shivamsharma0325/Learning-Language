@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class ColorsLevelActivity extends BaseActivity {
-    Button btnLevel6,btnLevel5,btnLevel4;
+    Button btnLevel1,btnLevel2,btnLevel3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
