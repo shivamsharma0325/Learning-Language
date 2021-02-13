@@ -1,0 +1,49 @@
+<LinearLayout android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvCtype"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:visibility="gone"
+        android:textSize="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:textSize="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCorrect"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tvWrong"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp" />
+<View
+    android:background="#d5d5d5"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"/>
+
+</LinearLayout>
