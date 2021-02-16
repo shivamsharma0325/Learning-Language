@@ -2,13 +2,19 @@ package com.launguagelearning;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.QuickContactBadge;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.Entry;
@@ -17,6 +23,8 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.launguagelearning.api.EndPointUrl;
 import com.launguagelearning.api.RetrofitInstance;
 import com.launguagelearning.model.ResponseData;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 

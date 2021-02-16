@@ -22,7 +22,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class AnimalsLearningActivity extends AppCompatActivity implements View.OnClickListener {
+public class AnimalsLearningActivity extends BaseActivity implements View.OnClickListener {
 
     ViewPager mViewPager;
     Button button_previous,button_next;

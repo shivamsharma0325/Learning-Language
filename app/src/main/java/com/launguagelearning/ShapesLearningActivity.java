@@ -1,8 +1,11 @@
 package com.launguagelearning;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import android.app.ProgressDialog;
-import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +18,6 @@ import com.launguagelearning.model.Lessons;
 import java.util.List;
 import java.util.Locale;
 
-import androidx.viewpager.widget.ViewPager;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

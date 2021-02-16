@@ -62,5 +62,4 @@ public interface EndPointUrl {
 
     @GET("/LanguageLearning/getLevelsByUname.php")
     Call<List<LevelsModel>> getLevelsByUname(@Query("uname") String uname, @Query("ctype") String ctype);
-
 }

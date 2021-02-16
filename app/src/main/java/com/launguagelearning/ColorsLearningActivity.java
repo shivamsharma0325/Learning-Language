@@ -1,14 +1,14 @@
 package com.launguagelearning;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 import android.app.ProgressDialog;
-import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import androidx.viewpager.widget.ViewPager;
 
 import com.launguagelearning.api.EndPointUrl;
 import com.launguagelearning.api.RetrofitInstance;

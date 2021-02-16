@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class AnimalsLearningDashboardActivity extends AppCompatActivity {
+public class AnimalsLearningDashboardActivity extends BaseActivity {
 Button btnLearning,btnTesting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

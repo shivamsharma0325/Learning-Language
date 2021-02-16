@@ -93,7 +93,6 @@ public class QuestionsActivity extends BaseActivity {
                     Intent intent = new Intent(getApplicationContext(),ResultActivity.class);
                     intent.putExtra("ctype",getIntent().getStringExtra("ctype"));
                     intent.putExtra("level",getIntent().getStringExtra("level"));
-
                     intent.putExtra("marks",""+marks);
                     intent.putExtra("correct",""+correct);
                     intent.putExtra("wrong",""+wrong);

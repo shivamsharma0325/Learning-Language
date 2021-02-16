@@ -17,13 +17,13 @@
             android:id="@+id/btnLearning"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Learning"
+            android:text="@string/Learning"
             />
         <Button
             android:id="@+id/btnTesting"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="Testing"
+            android:text="@string/Testing"
             />
     </LinearLayout>
 

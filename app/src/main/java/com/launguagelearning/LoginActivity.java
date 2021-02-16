@@ -32,7 +32,7 @@ public class LoginActivity extends BaseActivity {
     TextView tv_signup,tv_forgot_pwd;
     Button btnLogin;
     EditText editUserName,editPassword;
-Spinner sp_role;
+    Spinner sp_role;
     SharedPreferences sharedpreferences;
     CheckBox chRememberMe;
     @Override
@@ -64,25 +64,14 @@ Spinner sp_role;
                 if(sp_role.getSelectedItem().toString().equals("User")) {
                     submitdata(editUserName.getText().toString(), editPassword.getText().toString());
                 }else{
-                     if(editUserName.getText().toString().equals("admin")&&editPassword.getText().toString().equals("123")) {
+                     if(editUserName.getText().toString().equals("z")&&editPassword.getText().toString().equals("123")) {
                          startActivity(new Intent(getApplicationContext(), AdminActivity.class));
                          finish();
                      }else{
                          Toast.makeText(getApplicationContext(),"UserName/Password is invalid.",Toast.LENGTH_LONG).show();
                      }
                 }
-                /*int cnt = db.isUserAlreadyExist(editUserName.getText().toString(),editPassword.getText().toString());
-                if(cnt!=0) {
-                    Toast.makeText(getApplicationContext(),"Login is successfully.",Toast.LENGTH_LONG).show();
-                    sharedpreferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sharedpreferences.edit();
-                    editor.putString("is_first", "no");
-                    editor.commit();
-                    startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
-                    finish();
-                }else{
-                    Toast.makeText(getApplicationContext(),"UserName/Password is invalid.",Toast.LENGTH_LONG).show();
-                }*/
+
             }
         });
         tv_signup.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +107,6 @@ Spinner sp_role;
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putString("is_first", "no");
                         editor.putString("uname", editUserName.getText().toString());
-
                         editor.commit();
                     }else{
                         sharedpreferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
