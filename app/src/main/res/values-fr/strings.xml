@@ -1,58 +1,58 @@
 <resources>
-    <string name="app_name">Language Learning</string>
-    <string name="register">REGISTER1</string>
-    <string name="login_user_hint">EmailID1</string>
-    <string name="login_password_hint">Password1</string>
-    <string name="login_confirm_password_hint">Confirm Password1</string>
-    <string name="signup_login_hint">Already have an account? Sign In1</string>
-    <string name="login_signup_hint">Don\'t have an account? Sign Up1</string>
-    <string name="forgot_password">Forgot Password?1</string>
-    <string name="login_name_hint">Name1</string>
-    <string name="login_email_hint">Email1</string>
-    <string name="first_name_hint">First Name1</string>
-    <string name="last_name_hint">Last Name1</string>
-    <string name="login_mobile_number_hint">Mobile Number1</string>
-    <string name="read_file">This app needs access to your file storage so that it can read photos.1</string>
+    <string name="app_name">Apprendre une langue</string>
+    <string name="register">S\'INSCRIRE</string>
+    <string name="login_user_hint">ID e-mail</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="login_confirm_password_hint">Confirmez le mot de passe</string>
+    <string name="signup_login_hint">Vous avez déjà un compte? S\'identifier</string>
+    <string name="login_signup_hint">Vous n\'avez pas de compte? S\'inscrire</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="login_name_hint">Nom</string>
+    <string name="login_email_hint">E-mail</string>
+    <string name="first_name_hint">Prénom</string>
+    <string name="last_name_hint">Nom de famille</string>
+    <string name="login_mobile_number_hint">Numéro de portable</string>
+    <string name="read_file">Cette application a besoin d\'accéder à votre stockage de fichiers pour pouvoir lire les photos.</string>
     <string-array name="types">
-        <item>Colors</item>
-        <item>Animals</item>
-        <item>Shapes</item>
+        <item>Couleurs</item>
+        <item>Animaux</item>
+        <item>Formes</item>
     </string-array>
     <string-array name="levels">
-        <item>Level-1</item>
-        <item>Level-2</item>
-        <item>Level-3</item>
+        <item>niveau-1</item>
+        <item>niveau-2</item>
+        <item>niveau-3</item>
     </string-array>
     <string-array name="role">
-        <item>User</item>
-        <item>Admin</item>
+        <item>Utilisateur</item>
+        <item>Administrateur</item>
     </string-array>
 
-    <string name="Animals">Animals1</string>
-    <string name="Shapes">Shapes1</string>
-    <string name="Colors">Colors1</string>
-    <string name="UserHomeScreen">User Home Screen1</string>
-    <string name="UploadImage">Upload Image1</string>
-    <string name="Submit">Submit1</string>
-    <string name="EnterOption1">Enter Option1</string>
-    <string name="EnterOption2">Enter Option2</string>
-    <string name="EnterOption3">Enter Option3</string>
-    <string name="EnterAnswer">Enter Answer1</string>
+    <string name="Animals">Animaux</string>
+    <string name="Shapes">Formes</string>
+    <string name="Colors">Couleurs</string>
+    <string name="UserHomeScreen">Écran d\'accueil de l\'utilisateur</string>
+    <string name="UploadImage">Télécharger l\'image</string>
+    <string name="Submit">Nous faire parvenir</string>
+    <string name="EnterOption1">Entrez l\'option 1</string>
+    <string name="EnterOption2">Entrez l\'option 2</string>
+    <string name="EnterOption3">Entrez l\'option 3</string>
+    <string name="EnterAnswer">Entrez la réponse</string>
 
-    <string name="AddLesson">Add Lesson1</string>
-    <string name="AddTest">Add Test1</string>
-    <string name="Learning">Learning1</string>
-    <string name="Testing">Testing1</string>
-    <string name="MyProfile">My Profile1</string>
-    <string name="Previous">Previous1</string>
-    <string name="Next">Next1</string>
-    <string name="Question">Question1</string>
-    <string name="IdentifyImage">Identify the following Image1</string>
-    <string name="Quit">Quit1</string>
-    <string name="YourScore">Your Score1</string>
-    <string name="Restart">Restart1</string>
-    <string name="Login">Login1</string>
-    <string name="RememberMe">Remember Me1</string>
-    <string name="Register">Register1</string>
-    <string name="Signup">Signup1</string>
+    <string name="AddLesson">Ajouter une leçon</string>
+    <string name="AddTest">Ajouter un test</string>
+    <string name="Learning">Apprentissage</string>
+    <string name="Testing">Essai</string>
+    <string name="MyProfile">Mon profil</string>
+    <string name="Previous">Précédent</string>
+    <string name="Next">Suivant</string>
+    <string name="Question">Question</string>
+    <string name="IdentifyImage">Identifiez l\'image suivante</string>
+    <string name="Quit">Quitter</string>
+    <string name="YourScore">Ton score</string>
+    <string name="Restart">Redémarrage</string>
+    <string name="Login">Connexion</string>
+    <string name="RememberMe">Souviens-toi de moi</string>
+    <string name="Register">S\'inscrire</string>
+    <string name="Signup">S\'inscrire</string>
 </resources>

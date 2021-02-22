@@ -173,32 +173,7 @@ Button btnAnimals,btnShapes,btnColors;
     }*/
     ProgressDialog pd;
     List<ResultModel> results;
-    private void getResults() {
-        SharedPreferences sharedpreferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
-        pd = new ProgressDialog(DashboardActivity.this);
-        pd.setTitle("Please wait,Data is being loaded...");
-        pd.show();
-        EndPointUrl apiService = RetrofitInstance.getRetrofitInstance().create(EndPointUrl.class);
-        Call<List<ResultModel>> call = apiService.getResults(sharedpreferences.getString("uname","-"));
-        call.enqueue(new Callback<List<ResultModel>>() {
-            @Override
-            public void onResponse(Call<List<ResultModel>> call, Response<List<ResultModel>> response) {
-                pd.dismiss();
-                if (response.code()==200) {
-                    if (response.body() != null) {
-                        if(response.body().size()>0) {
-                            results =response.body();
-                            Toast.makeText(getApplicationContext(),""+response.body().size(),Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }
-            }
-            @Override
-            public void onFailure(Call<List<ResultModel>> call, Throwable t) {
-                pd.dismiss();
-            }
-        });
-    }
+
     private void restartActivity() {
         Intent intent = getIntent();
         startActivity(intent);

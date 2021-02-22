@@ -45,8 +45,8 @@ public interface EndPointUrl {
     @GET("/LanguageLearning/getShapesLessions.php")
     Call<List<Lessons>> getShapesLessions();
 
-    @GET("/LanguageLearning/get_result.php")
-    Call<List<ResultModel>> getResults(@Query("uname") String uname);
+    @GET("/LanguageLearning/get_result_by_category_level.php")
+    Call<List<ResultModel>> getResults(@Query("uname") String uname,@Query("ctype") String ctype,@Query("level") String level);
 
     @GET("/LanguageLearning/getTestQuestion.php")
     Call<List<ModelTest>> getQuestions(@Query("ctype") String ctype, @Query("level") String level);

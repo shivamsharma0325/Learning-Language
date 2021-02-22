@@ -2,6 +2,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/language_learning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"/>
+    <RadioGroup
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbAnimals"
+            android:text="Animals"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbShapes"
+            android:text="Shapes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbColors"
+            android:text="colors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/ibLevel1"
+            android:layout_weight="1"
+            android:background="@drawable/level_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/ibLevel2"
+            android:layout_weight="1"
+            android:background="@drawable/level_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/ibLevel3"
+            android:layout_weight="1"
+            android:background="@drawable/level_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
     <ListView
         android:id="@+id/list_view"
         android:divider="@null"

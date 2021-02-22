@@ -61,7 +61,7 @@ public class LoginActivity extends BaseActivity {
                     Toast.makeText(getApplicationContext(),"Please enter password",Toast.LENGTH_LONG).show();
                     return;
                 }
-                if(sp_role.getSelectedItem().toString().equals("User")) {
+                if(sp_role.getSelectedItemPosition()==0) {
                     submitdata(editUserName.getText().toString(), editPassword.getText().toString());
                 }else{
                      if(editUserName.getText().toString().equals("z")&&editPassword.getText().toString().equals("123")) {
