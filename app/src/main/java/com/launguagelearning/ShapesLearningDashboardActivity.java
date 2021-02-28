@@ -22,7 +22,7 @@ public class ShapesLearningDashboardActivity extends BaseActivity {
         btnLearning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ShapesLearningActivity.class));
+                startActivity(new Intent(getApplicationContext(),ShapesLearningLevelActivity.class));
             }
         });
         btnTesting.setOnClickListener(new View.OnClickListener() {

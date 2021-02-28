@@ -103,6 +103,9 @@ public class ResultActivity extends BaseActivity {
                 pd.dismiss();
                 if(response.body().status.equals("true")) {
                     Toast.makeText(ResultActivity.this,response.body().message , Toast.LENGTH_SHORT).show();
+                    QuestionsActivity.marks=0;
+                    QuestionsActivity.correct=0;
+                    QuestionsActivity.wrong=0;
                     finish();
                 }else{
                     Toast.makeText(ResultActivity.this,response.body().message , Toast.LENGTH_SHORT).show();

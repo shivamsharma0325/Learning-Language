@@ -1,9 +1,11 @@
 package com.launguagelearning.api;
 
+import com.launguagelearning.model.EditLessions;
 import com.launguagelearning.model.EditProfile;
 import com.launguagelearning.model.Lessons;
 import com.launguagelearning.model.LevelsModel;
 import com.launguagelearning.model.ModelTest;
+import com.launguagelearning.model.ModelTest1;
 import com.launguagelearning.model.ResponseData;
 import com.launguagelearning.model.ResultModel;
 
@@ -39,6 +41,9 @@ public interface EndPointUrl {
     @GET("/LanguageLearning/getAnimalsLessions.php")
     Call<List<Lessons>> getAnimalsLessions();
 
+    @GET("/LanguageLearning/getAnimalsLessionsByCategoryAndLevel.php")
+    Call<List<Lessons>> getAnimalsLessionsByCategoryAndLevel(@Query("ctype") String ctype,@Query("level") String level);
+
     @GET("/LanguageLearning/getColorsLessions.php")
     Call<List<Lessons>> getColorsLessions();
 
@@ -62,4 +67,17 @@ public interface EndPointUrl {
 
     @GET("/LanguageLearning/getLevelsByUname.php")
     Call<List<LevelsModel>> getLevelsByUname(@Query("uname") String uname, @Query("ctype") String ctype);
+
+    @GET("/LanguageLearning/getAdminEditLessions.php")
+    Call<List<EditLessions>> getAllLessions();
+
+    @GET("/LanguageLearning/getAllTests.php")
+    Call<List<ModelTest1>> getAllTests();
+
+    @GET("/LanguageLearning/deleteLessions.php")
+    Call<ResponseData> deleteLessions(@Query("id") String id);
+
+    @GET("/LanguageLearning/deleteTests.php")
+    Call<ResponseData> deleteTests(@Query("id") String id);
+
 }

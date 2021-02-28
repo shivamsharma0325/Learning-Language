@@ -40,6 +40,8 @@
     <string name="EnterAnswer">Entrez la réponse</string>
 
     <string name="AddLesson">Ajouter une leçon</string>
+    <string name="EditLesson">Edit Lessons</string>
+    <string name="EditTests">Edit Model Test</string>
     <string name="AddTest">Ajouter un test</string>
     <string name="Learning">Apprentissage</string>
     <string name="Testing">Essai</string>

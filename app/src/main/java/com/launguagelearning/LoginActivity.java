@@ -35,6 +35,7 @@ public class LoginActivity extends BaseActivity {
     Spinner sp_role;
     SharedPreferences sharedpreferences;
     CheckBox chRememberMe;
+    TextView tvEng,tvFr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +44,22 @@ public class LoginActivity extends BaseActivity {
         editUserName = (EditText) findViewById(R.id.editUserName);
         editPassword = (EditText) findViewById(R.id.editPassword);
         sp_role = (Spinner) findViewById(R.id.sp_role);
+        tvEng = (TextView) findViewById(R.id.tvEng);
+        tvFr = (TextView) findViewById(R.id.tvFr);
+        tvEng.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setLocale("en");
+                restartActivity();
+            }
+        });
+        tvFr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setLocale("fr");
+                restartActivity();
+            }
+        });
 
         tv_signup=(TextView)findViewById(R.id.tv_signup);
         tv_forgot_pwd=(TextView)findViewById(R.id.tv_forgot_pwd);
@@ -125,5 +142,10 @@ public class LoginActivity extends BaseActivity {
                 pd.dismiss();
             }
         });
+    }
+    private void restartActivity() {
+        Intent intent = getIntent();
+        startActivity(intent);
+        finish();
     }
 }

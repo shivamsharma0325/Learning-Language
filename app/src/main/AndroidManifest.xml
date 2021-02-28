@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.launguagelearning">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,7 +15,14 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageSlider">
-        <activity android:name=".AddTestQuestionsAdminActivity"></activity>
+        <activity android:name=".EditModelTestsActivity"></activity>
+        <activity android:name=".EditTestsActivity" />
+        <activity android:name=".EditLessionDetailsActivity" />
+        <activity android:name=".EditLessionsActivity" />
+        <activity android:name=".ShapesLearningLevelActivity" />
+        <activity android:name=".ColorsLearningLevelActivity" />
+        <activity android:name=".AnimalsLearningLevelActivity" />
+        <activity android:name=".AddTestQuestionsAdminActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".AddTestAdminActivity" />
@@ -36,16 +44,14 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".ColorsLearningActivity" />
-        <activity android:name=".ResultActivity"/>
-        <activity android:name=".GetResultActivity"/>
-
-        <activity android:name=".QuestionsActivity"/>
-        <activity android:name=".BaseActivity"/>
-
-
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".GetResultActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".BaseActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

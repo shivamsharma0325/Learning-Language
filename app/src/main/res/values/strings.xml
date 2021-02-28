@@ -40,6 +40,8 @@
     <string name="EnterAnswer">Enter Answer</string>
 
     <string name="AddLesson">Add Lesson</string>
+    <string name="EditLesson">Edit Lessons</string>
+    <string name="EditTests">Edit Model Test</string>
     <string name="AddTest">Add Test</string>
     <string name="Learning">Learning</string>
     <string name="Testing">Testing</string>
@@ -59,7 +61,6 @@
 
     <string name="Open">Open navigation drawer</string>
     <string name="Close">Close navigation drawer</string>
-
 
 
 </resources>

@@ -26,8 +26,25 @@ public interface ApiService {
     );
 
     @Multipart
+    @POST("LanguageLearning/edit_category_image.php")
+    Call<ResponseData> editLessions(
+            @Part MultipartBody.Part file,
+            @PartMap Map<String, String> partMap
+
+    );
+
+
+
+    @Multipart
     @POST("LanguageLearning/add_model_test.php")
     Call<ResponseData> add_model_test(
+            @Part MultipartBody.Part file,
+            @PartMap Map<String, String> partMap
+    );
+
+    @Multipart
+    @POST("LanguageLearning/edit_model_tests.php")
+    Call<ResponseData> edit_model_tests(
             @Part MultipartBody.Part file,
             @PartMap Map<String, String> partMap
     );

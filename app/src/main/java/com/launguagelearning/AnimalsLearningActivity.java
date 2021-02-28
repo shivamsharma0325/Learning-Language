@@ -93,7 +93,7 @@ List<Lessons> lessions;
         pd.setTitle("Please wait,Data is being loaded...");
         pd.show();
         EndPointUrl apiService = RetrofitInstance.getRetrofitInstance().create(EndPointUrl.class);
-        Call<List<Lessons>> call = apiService.getAnimalsLessions();
+        Call<List<Lessons>> call = apiService.getAnimalsLessionsByCategoryAndLevel(getIntent().getStringExtra("ctype"),getIntent().getStringExtra("level"));
         call.enqueue(new Callback<List<Lessons>>() {
             @Override
             public void onResponse(Call<List<Lessons>> call, Response<List<Lessons>> response) {

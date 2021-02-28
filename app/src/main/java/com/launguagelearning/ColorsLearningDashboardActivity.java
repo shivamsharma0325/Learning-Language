@@ -22,7 +22,7 @@ public class ColorsLearningDashboardActivity extends BaseActivity {
         btnLearning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ColorsLearningActivity.class));
+                startActivity(new Intent(getApplicationContext(),ColorsLearningLevelActivity.class));
             }
         });
         btnTesting.setOnClickListener(new View.OnClickListener() {

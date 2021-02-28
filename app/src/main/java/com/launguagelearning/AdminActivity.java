@@ -5,7 +5,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,11 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class AdminActivity extends BaseActivity {
-Button btnAddLesson,btnTest;
+Button btnAddLesson,btnTest,btnEditLesson,btnEditTests;
     private ActionBarDrawerToggle t;
     private NavigationView nv;
     private DrawerLayout dl;
@@ -31,6 +29,14 @@ Button btnAddLesson,btnTest;
 
         btnAddLesson =(Button)findViewById(R.id.btnAddLesson);
         btnTest=(Button)findViewById(R.id.btnTest);
+        btnEditLesson=(Button)findViewById(R.id.btnEditLesson);
+        btnEditTests=(Button)findViewById(R.id.btnEditTests);
+        btnEditTests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),EditTestsActivity.class));
+            }
+        });
         btnAddLesson.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +47,12 @@ Button btnAddLesson,btnTest;
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),AddTestQuestionsAdminActivity.class));
+            }
+        });
+        btnEditLesson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),EditLessionsActivity.class));
             }
         });
     }
@@ -72,7 +84,6 @@ Button btnAddLesson,btnTest;
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;
-
             }
         });
     }

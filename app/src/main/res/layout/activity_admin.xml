@@ -19,6 +19,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/AddLesson" />
+        <Button
+            android:id="@+id/btnEditLesson"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/EditLesson" />
 
         <Button
             android:id="@+id/btnTest"
@@ -27,7 +33,12 @@
             android:layout_marginTop="16dp"
             android:text="@string/AddTest" />
 
-
+        <Button
+            android:id="@+id/btnEditTests"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/EditTests" />
     </LinearLayout>
 
 

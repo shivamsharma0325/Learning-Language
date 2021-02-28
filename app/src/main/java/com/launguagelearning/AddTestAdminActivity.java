@@ -25,13 +25,13 @@ public class AddTestAdminActivity extends BaseActivity {
         btnShapes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),AddTestAdminActivity.class));
+                startActivity(new Intent(getApplicationContext(),AddImageActivity.class));
             }
         });
         btnColors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),AddTestAdminActivity.class));
+                startActivity(new Intent(getApplicationContext(),AddImageActivity.class));
             }
         });
     }

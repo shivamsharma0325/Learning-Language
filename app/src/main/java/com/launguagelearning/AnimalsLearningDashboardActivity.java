@@ -22,7 +22,7 @@ Button btnLearning,btnTesting;
         btnLearning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),AnimalsLearningActivity.class));
+                startActivity(new Intent(getApplicationContext(),AnimalsLearningLevelActivity.class));
             }
         });
         btnTesting.setOnClickListener(new View.OnClickListener() {
